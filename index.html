@@ -34,11 +34,14 @@
                         <li><p><strong>git add [archivo]:</strong> Agrega el o los archivos al <strong>STAGE AREA</strong> o al area de control, esto sirve para que los archivos esten listos para hacer el commit(punto de control) y también sirve para actualizar o aceptar los cambios realizados en un archivo.</p></li>
                         <li><p><strong>git commit:</strong> Se crea un punto de control, esto quiere decir que podemos volver a este punto en caso de necesitar hacerlo, por ejemplo en caso de que tengamos una falla en el código y queramos volver a la configuración anterior o inicial o a la que teníamos hasta ese punto en específico.</p></li>
                         <li><p><strong>git commit -m "nombre del commit":</strong>Esto es un comando para realizar un commit de forma más rápida, evita que entre al editor de texto para poner el nombre ya que lo podemos hacer de forma inmediata en el mismo comando.</p></li>
-                        <li><p><srong>git restore [archivo]:</srong> Sirve para descartar los cambios realizados a un archivo y volver al estado inicial.</p></li>
+                        <li><p><strong>git restore [archivo]:</strong> Sirve para descartar los cambios realizados a un archivo y volver al estado inicial.</p></li>
                         <li><p><strong>git restore --staged [archivo]:</strong> sirve para para sacar el archivo del <strong>STAGE AREA</strong>.</p></li>
                         <li><p><strong>git log:</strong> Sirve para ver todos los commits que hemos creado.</p></li>
                         <li><p><strong>git checkout -- [archivo]:</strong> Sirve para revertir cambios que hemos realizado pero que no se han guardado con git add todavía y nos devulve al commit inmediatamente anterior.</p></li>
                         <li><p><strong>git diff [archivo]:</strong> Ver las diferencias hechas en los archivos</p></li>
+                        <li><p><strong>git branch:</strong>Nos muestra las rammas que tenemos</p></li>
+                        <li><p><strong>git branch [nombre de la rama]:</strong>Permite crear una rama alterna a la master, los cambios en esta nueva rama no afectarán a la rama master hasta que se decida lo contrario.</p></li>
+                        <li><p><strong>git checkout [nombre de la rama]:</strong>Permite cambiar entre ramas. Por ejemplo si estamos en la rama master y queremos cambiar a una rama alterna llamada proyecto por ejemplo, escribimos: git checkout proyecto.</p></li>
                     </ul>
                     <hr>
                     <p><h3>* .gitignore:</h3> Permite ignorar los archivos que queramos para que los cambios que realicemos en ellos no se vean afectados por git, osea que si realizamos un cambio en un archivo ignorado al escribir git status no saldrán los cambios en ese archivo. <br><br> Para lograr esto debemos crear en el proyecto un archivo llamado [.gitignore] y dentro de este archivo escribimos el nombre del archivo que queremos ignorar.</p>
